@@ -1,12 +1,19 @@
 package Data::Phrasebook::Loader::JSON;
+
 use strict;
 use warnings FATAL => 'all';
+
+our $VERSION = '0.02';
+
+#--------------------------------------------------------------------------
+
 use base qw( Data::Phrasebook::Loader::Base Data::Phrasebook::Debug );
+
 use Carp qw( croak );
 use File::Slurp;
 use JSON::XS;
 
-our $VERSION = '0.01';
+#--------------------------------------------------------------------------
 
 =head1 NAME
 
@@ -289,7 +296,7 @@ be forthcoming, please feel free to (politely) remind me.
 
 =head1 COPYRIGHT AND LICENSE
 
-  Copyright (C) 2013 Barbie for Miss Barbell Productions.
+  Copyright (C) 2013-2014 Barbie for Miss Barbell Productions.
 
   This distribution is free software; you can redistribute it and/or
   modify it under the Artistic License 2.0.
